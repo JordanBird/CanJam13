@@ -43,13 +43,8 @@ public class AngleControl : MonoBehaviour {
 		{
 		}
 		
-		if (Input.GetKey (KeyCode.LeftControl))
-		{
-			rigidbody.AddRelativeForce(reverseForce);
-		}
-		
 			Vector3 nintyMinus = new Vector3 (-90, 0, 0);
-			transform.Translate((transform.forward - nintyMinus) * (Time.deltaTime * 1));
+			transform.Translate((transform.forward - nintyMinus) / 200);
 	}
 		
 		void Up ()
