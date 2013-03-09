@@ -14,6 +14,16 @@ public class cscript_mainmenu : MonoBehaviour {
 	}
 	
 	void OnGUI () {
-		GUI.Label (new Rect (25, 25, 100, 30), "Label");
+		if (GUI.Button (new Rect (200, 200, 100, 30), "Load Level")) {
+			Application.LoadLevel ("TestLevel");
+		}
+		
+		if (GUI.Button (new Rect (200, 240, 100, 30), "Quit")) {
+			Application.LevelSelect ("TestLevel");
+		}
+		
+		if (GUI.Button (new Rect (200, 280, 100, 30), "Quit")) {
+			Application.Quit ();
+		}
 	}
 }
