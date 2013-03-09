@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\AngleControl.cs" />
+     <Compile Include="Assets\Rotator.cs" />
      <Compile Include="Assets\cscript_level_select.cs" />
      <Compile Include="Assets\cscript_main_game.cs" />
      <Compile Include="Assets\cscript_mainmenu.cs" />
