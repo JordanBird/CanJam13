@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class cscript_level_select : MonoBehaviour {
 	
@@ -13,8 +14,7 @@ public class cscript_level_select : MonoBehaviour {
 		levelNames.Add ("TestLevel");
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	void OnGUI () {
 		int y = 200;
 		
 		for (int i = 0; i < levelNames.Count; i++)
@@ -25,8 +25,19 @@ public class cscript_level_select : MonoBehaviour {
 			y += 40;
 		}
 		
+		if (GUI.Button (new Rect (200, y, 100, 30), "Back")) {
+			Application.LoadLevel ("JordansScene");
+		}
+		
+		y += 40;
+		
 		if (GUI.Button (new Rect (200, y, 100, 30), "Quit")) {
 			Application.Quit ();
 		}
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
 	}
 }
