@@ -47,6 +47,7 @@
      <Compile Include="Assets\AngleControl.cs" />
      <Compile Include="Assets\cscript_level_select.cs" />
      <Compile Include="Assets\cscript_mainmenu.cs" />
+     <Compile Include="Assets\cscript_warp_gate.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
