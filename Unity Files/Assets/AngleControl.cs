@@ -6,7 +6,8 @@ public class AngleControl : MonoBehaviour {
 	public int xRotation = 0;
 	public int yRotation = 0;
 	public int zRotation = 0;
-	public int rotSpeed = 17;
+	public int rotSpeed = 30;
+	public int forSpeed = 250;
 
 	public Vector3 forwardForce;
 	public Vector3 reverseForce;
@@ -41,10 +42,22 @@ public class AngleControl : MonoBehaviour {
 		
 		if (Input.GetKey (KeyCode.LeftShift))
 		{
+			if (forSpeed >= 150)
+			{
+				forSpeed = forSpeed - 1;
+			}
+		}
+		
+		if (Input.GetKey (KeyCode.LeftControl))
+		{
+			if (forSpeed <= 500)
+			{
+				forSpeed = forSpeed + 1;
+			}
 		}
 		
 			Vector3 nintyMinus = new Vector3 (-90, 0, 0);
-			transform.Translate((transform.forward - nintyMinus) / 200);
+			transform.Translate((transform.forward - nintyMinus) / forSpeed);
 	}
 		
 		void Up ()
