@@ -46,8 +46,11 @@
   <ItemGroup>
      <Compile Include="Assets\AngleControl.cs" />
      <Compile Include="Assets\cscript_level_select.cs" />
+     <Compile Include="Assets\cscript_main_game.cs" />
      <Compile Include="Assets\cscript_mainmenu.cs" />
      <Compile Include="Assets\cscript_warp_gate.cs" />
+     <Compile Include="Assets\cscript_warp_gate_bob.cs" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
   </ItemGroup>
   <ItemGroup>
