@@ -61,8 +61,8 @@ public class AngleControl : MonoBehaviour {
 			}
 		}
 		
-			Vector3 nintyMinus = new Vector3 (90, 0, 0);
-			transform.Translate((transform.forward - nintyMinus) / forSpeed);
+			//Vector3 nintyMinus = new Vector3 (90, 0, 0);
+			//transform.Translate((transform.forward - nintyMinus) / forSpeed);
 	}
 		
 		void Up ()
